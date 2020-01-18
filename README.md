@@ -7,6 +7,7 @@
   - Express
   - CSS
   - GraphQL
+  - MongoDB
 
   
   # Process to start the code
@@ -16,6 +17,5 @@
   3. Move to cd client to install client dependencies. 
   4. Move to main server directory to install server dependencies.
   4. Run npm install on both client and server directories in order to install dependencies.
-  5. At this point you can run server at the main directory "npm start" and client on the client directory to open the web page "npm start" on the 
-     other command prompt.
+  5. At this point you can run application at the main directory using "npm run dev"
 
