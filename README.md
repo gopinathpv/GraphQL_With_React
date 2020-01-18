@@ -1,5 +1,7 @@
 # GraphQL_With_React
 
+![](application.jpeg)
+
 # Technologies used 
   - React.js   
   - React-Dom
