@@ -30,7 +30,6 @@ const DirectorType = new GraphQLObjectType({
         movies:{
             type: new GraphQLList(MovieType),
             resolve(parent,args){
-                console.log(parent)
                 return Moviess.find({directorId: parent.id})
 
             }
@@ -45,7 +44,6 @@ const Query = new GraphQLObjectType({
             type: MovieType,
             args:{id: {type:GraphQLID}},
             resolve(parent, args){
-                console.log("got the ars",args)
                 return Moviess.findById(args.id)
             }
         },
@@ -53,7 +51,6 @@ const Query = new GraphQLObjectType({
            type:DirectorType,
            args:{id:{type:GraphQLID}},
            resolve(parent,args){
-            console.log("got the ss",args)
             return Directorss.findById(args.id)
            }
        },
